@@ -1,0 +1,25 @@
+<div class="container" style="margin: 10px;">
+    <label>Full Name</label>
+    <input class="form-control" type="text" [(ngModel)]=objPupil.full_name>
+    <label>ID</label>
+    <input class="form-control" type="text" [(ngModel)]=objPupil.id>
+    <label>Age</label>
+    <input class="form-control" type="number" [(ngModel)]=objPupil.age>
+    <label>City</label>
+    <input class="form-control" type="text" [(ngModel)]=objPupil.hometown>
+    <label>Photo URL</label>
+    <input class="form-control" type="url" [(ngModel)]=objPupil.photo>
+    <label>Grades</label>
+    <div class="row" *ngFor="let g of classSub">
+        <div class="col">
+            <label>Subject</label>
+            <input class="form-control" type="text" [(ngModel)]=g.name>
+        </div>
+        <div class="col">
+            <label>Grade</label>
+            <input class="form-control" type="number" [(ngModel)]=g.grade>
+        </div>
+        <div class="col"><button class="btn btn-danger" value={{g.name}} (click)=removeGrade($event)>Remove Grade</button></div>
+        <div class="col"><button class="btn btn-primary" (click)=addGrade()>Adds grade</button></div>
+    </div>
+</div>

@@ -1,27 +1,18 @@
-# SchoolSiteAngular
+### The app's screens 
+### Teacher's screen
+<img width="960" alt="Teachers' screen" src="https://user-images.githubusercontent.com/41367792/125254558-40699380-e303-11eb-8ca8-da1de8fe05f5.PNG">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
 
-## Development server
+### Edit teachers' information screen
+<img width="947" alt="Edit teacher's screen" src="https://user-images.githubusercontent.com/41367792/125254514-321b7780-e303-11eb-93b5-475e8adabd53.PNG">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Students' screen
+<img width="949" alt="Pupil's screen" src="https://user-images.githubusercontent.com/41367792/125254719-655e0680-e303-11eb-9efe-ddd8149dc4ea.PNG">
 
-## Code scaffolding
+### Edit students' infromation screen
+<img width="948" alt="Edit pupil's screen" src="https://user-images.githubusercontent.com/41367792/125254763-73ac2280-e303-11eb-979c-9a29889aa0b2.PNG">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Employees' screen
+<img width="948" alt="Employees' screen" src="https://user-images.githubusercontent.com/41367792/125254818-81fa3e80-e303-11eb-9547-3a788fb2149f.PNG">
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Full name Michael Gumenko, ID: 323276246

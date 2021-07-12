@@ -1,0 +1,27 @@
+<div class="container" style="background-color: white; height: 80%; width: 80%;">
+    <h1 style="text-align: center;">Pupils' page</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Full name</th>
+                <th>id</th>
+                <th>Age</th>
+                <th>Hometown</th>
+                <th>Average Grade</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let s of information|async" [class]=averageGrade(s)>
+                <td><img [src]=s.photo alt="photo" style="height: 50px; width: 50px;"></td>
+                <td>{{s.full_name}}</td>
+                <td>{{s.id}}</td>
+                <td>{{s.age}}</td>
+                <td>{{s.hometown}}</td>
+                <td>{{color[s.id].average}}</td>
+                <td><button routerLink="/pupils/{{s.id}}" class="btn btn-primary">Edit</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

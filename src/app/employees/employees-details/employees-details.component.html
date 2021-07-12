@@ -1,0 +1,27 @@
+<div class="container" style="background-color: white; height: 80%; width: 80%;">
+    <h1 style="text-align: center;">Employees' page</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Full name</th>
+                <th>id</th>
+                <th>Age</th>
+                <th>Hometown</th>
+                <th>Job name</th>
+                <th>Wage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let e of information|async" [class]=Wage(e)>
+                <td><img [src]=e.photo alt="photo" style="height: 50px; width: 50px;"></td>
+                <td>{{e.full_name}}</td>
+                <td>{{e.id}}</td>
+                <td>{{e.age}}</td>
+                <td>{{e.hometown}}</td>
+                <td>{{e.jobName}}</td>
+                <td>{{color[e.id].w}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,22 @@
+<div class="headerContainer" style="text-align: center;">
+  <h1>Welcome to Garreg Mach Monastery!</h1>
+  <p>This academy is for teaching and training nobles and commoners alike for the harsh fields of battle.</p>
+  <p>The number of current student is: {{studentCount}}</p>
+  <p>The number of current professors is: {{teacherCount}}</p>
+  <p>The number of current employees is: {{employeeCount}}</p>
+</div>
+<div class="container d-flex flex-wrap">
+  <div class="card rounded col-sm-4 bg-dark" style="height: 700px; border-color: blueviolet;" *ngFor="let t of information|async">
+    <img class="card-img-top" [src]=t.photo alt="Image" style="text-align: center; margin-left: 25%; width: 200px;">
+    <div class="card-body">
+      <h5 class="card-title">Full name: {{t.full_name}}</h5>
+      <p class="card-text">id: {{t.id}}</p>
+      <p class="card-text">Age: {{t.age}}</p>
+      <p class="card-text">Hometown: {{t.hometown}}</p>
+      <p class="card-text">profession: {{t.profession}}</p>
+      <p class="card-text">Experience: {{t.yearsOfExperience}}</p>
+      <p class="card-text">Monthly income: {{t.monthlyWorkHours * t.hourlySalary}}</p>
+      <button routerLink="/teachers/{{t.id}}" class="btn btn-primary">Edit</button>
+    </div>
+  </div>
+</div>
